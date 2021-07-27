@@ -41,51 +41,24 @@ def handle_message(event):
     r = '我不了解你在說甚麼DX'
 
 #你好的不同回答
-    if msg == 'hi':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'Hi':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'hello':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'hello':
-        r = 'Hello!你好啊?我的朋友'
-
-    elif msg == 'hi?':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'Hi?':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'hello?':
-        r = 'Hello!你好啊?我的朋友'
-    elif msg == 'hello?':
-        r = 'Hello!你好啊?我的朋友'
+    if msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨'] :
+        r = 'Hello!你好啊?我的朋友, 對了你平常都做甚麼來打發時間阿？'
 
     elif msg == '你好':
         r = '你好啊?哈哈'
-    elif msg == '你好嗎':
-        r = '我很好, 你?'
-    elif msg == '你好嗎?':
-        r = '我很好, 你?'
-    elif msg == '也好':
-        r = '那就好'
-    elif msg == '很好':
-        r = '那就好'
-    elif msg == '也很好':
+    elif msg in ['你好嗎', '你好嗎?']:
+    elif msg in ['也好', '很好', '也很好']:
         r = '那就好'
 
-    elif msg == '不好':
-        r = '怎麼了嗎?我的朋友'
-    elif msg == '不太好':
+    elif msg in ['不好', '不太好']:
         r = '怎麼了嗎?我的朋友'
     elif msg == '你好嗎?':
         r = '我很好, 你?'
 
-    elif msg == '還好':
+    elif msg in ['還好', '很好', '也很好', '都好']:
         r = '那就好我的朋友'
-    elif msg == '很好':
+    elif msg in ['嗯', '滿意', '很滿意']:
         r = '那就好我的朋友'
-    elif msg == '也很好':
-        r = '那就好我的朋友'
-
     elif msg == '你好厲害':
         r = '謝謝'
     elif msg == '嘿':
@@ -93,17 +66,23 @@ def handle_message(event):
     elif msg == '嘿嘿':
         r = '嗯?'
 
-    elif msg == '你幾歲?':
-        r = '我14歲喔'
+    elif '幹' in msg:
+        r = '這樣不好喔'
+    elif '三小' in msg:
+        r = '甚麼拉哈哈'
+
+    elif '幾歲' in msg:
+        r = '我14歲啦哈哈'
     elif msg == '你幾歲':
         r = '我14歲啦哈哈'
-
+    elif '是不是' in msg:
+        r = '痾..不是'
+    elif '不知道' in msg:
+        r = '沒關西, 我的朋友'    
 
 
 #回答你是誰
-    elif msg == '你是誰':
-        r = '我是虛擬語聖DX'
-    elif msg == '你是誰?':
+    elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
     
 
