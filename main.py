@@ -59,6 +59,8 @@ def handle_message(event):
         r = '怎麼了嗎?我的朋友'
     elif msg == '你好嗎?':
         r = '我很好, 你?'
+    elif '無' in msg:
+        r = '是嗎?' 
 
     elif msg in ['還好', '很好', '也很好', '都好']:
         r = '那就好我的朋友'
@@ -86,7 +88,7 @@ def handle_message(event):
     elif '怎' in msg:
         r = '沒事沒事' 
 
-    elif '你喜歡' in msg:
+    elif '喜歡' in msg:
         r = '這不能說'  
 
     elif '歌' in msg:
@@ -102,8 +104,10 @@ def handle_message(event):
     elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉'] :
         r = 'Hello!你好啊?我的朋友'
 
-    elif '' in msg:
-        r = '' 
+    elif '會說' in msg:
+        r = '你再問問看'
+    elif '相信' in msg:
+        r = '我相信'  
     elif '遊戲' in msg:
         r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 '
     elif 'Ed Sheeran' in msg:
