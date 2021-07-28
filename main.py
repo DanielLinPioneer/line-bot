@@ -43,7 +43,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    print('Daniel: app Flask - ok')
+    print('Daniel: app Flask ============  - ok')
     msg = event.message.text
     r = '我不了解你在說甚麼DX'
 
