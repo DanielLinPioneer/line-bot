@@ -117,7 +117,17 @@ def handle_message(event):
     elif '喔' in msg:
         r = '嗯嗯'
     elif '喜歡做的事' in msg:
-        r = '我喜歡寫程式, 畫3D, 彈吉他和唱歌'   
+        r = '我喜歡寫程式, 畫3D, 彈吉他和唱歌'  
+    elif '吉他' in msg:
+        r = '我喜歡彈吉他哈哈' 
+    elif '我是誰' in msg:
+        r = '你是人啊(義宏'
+    elif '笨' in msg:
+        r = '不要這麼說嘛' 
+    elif '笑話' in msg:
+        r = '有一天有一個人跟機器人說:講笑話, 機器人說:你這邊緣人' 
+    elif '邊緣' in msg:
+        r = '你也差不多(跟機器人聊天..' 
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
