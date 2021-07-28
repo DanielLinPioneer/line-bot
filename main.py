@@ -96,7 +96,7 @@ def handle_message(event):
     elif '嗎' in msg:
         r = '嗯嗯'
     elif '好' in msg:
-        r = '沒關西, 我的朋友'  
+        r = '沒關係, 我的朋友'  
     elif '乾我' in msg:
         r = '是喔好吧'      
     elif '屁' in msg:
