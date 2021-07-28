@@ -84,7 +84,8 @@ def handle_message(event):
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
-    
+    elif '你好爛' in msg:
+        r = '我還不算是一個好的機器人, 請盡量'    
 
     line_bot_api.reply_message(
         event.reply_token,
