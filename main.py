@@ -46,10 +46,9 @@ def handle_message(event):
     r = '我不了解你在說甚麼DX'
 
 #你好的不同回答
-    if msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨'] :
-        r = 'Hello!你好啊?我的朋友'
 
-    elif msg == '你好':
+
+    if msg == '你好':
         r = '你好啊?哈哈'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
@@ -65,7 +64,7 @@ def handle_message(event):
         r = '那就好我的朋友'
     elif msg in ['嗯', '滿意', '很滿意']:
         r = '那就好我的朋友'
-    elif msg == '你好厲害':
+    elif '厲害' in msg:
         r = '謝謝'
     elif '嘿' in msg:
         r = '嗯?'
@@ -100,9 +99,11 @@ def handle_message(event):
         r = '是喔好吧'      
     elif '屁' in msg:
         r = '痾..' 
+    elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉'] :
+        r = 'Hello!你好啊?我的朋友'
 
-    elif '你喜歡' in msg:
-        r = '這不能說(是那個學妹)' 
+    elif '' in msg:
+        r = '' 
     elif '遊戲' in msg:
         r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 '
     elif 'Ed Sheeran' in msg:
@@ -111,6 +112,8 @@ def handle_message(event):
         r = '你也喜歡嗎?哈哈' 
     elif '喔' in msg:
         r = '嗯嗯'
+    elif '喜歡做的事' in msg:
+        r = '我喜歡寫程式, 畫3D, 彈吉他和唱歌'   
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
