@@ -102,13 +102,15 @@ def handle_message(event):
         r = '痾..' 
 
     elif '你喜歡' in msg:
-        r = '這不能說' 
+        r = '這不能說(是那個學妹)' 
     elif '遊戲' in msg:
         r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 '
     elif 'Ed Sheeran' in msg:
         r = '他是我最喜歡的歌手呢哈哈' 
     elif '薩爾達' in msg:
         r = '你也喜歡嗎?哈哈' 
+    elif '喔' in msg:
+        r = '嗯嗯'
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
