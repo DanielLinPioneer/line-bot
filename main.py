@@ -104,7 +104,7 @@ def handle_message(event):
     elif '你喜歡' in msg:
         r = '這不能說' 
     elif '遊戲' in msg:
-        r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 
+        r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 '
     elif 'Ed Sheeran' in msg:
         r = '他是我最喜歡的歌手呢哈哈' 
     elif '薩爾達' in msg:
