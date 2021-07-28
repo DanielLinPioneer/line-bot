@@ -20,6 +20,7 @@ print('Daniel: app Flask - 01')
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
+    print('Daniel: app Flask - 02 - 1')
     signature = request.headers['X-Line-Signature']
     print('Daniel: app Flask - 02')
 
