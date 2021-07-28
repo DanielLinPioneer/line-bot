@@ -95,8 +95,7 @@ def handle_message(event):
         r = '說到這個, 我最喜歡的歌手是Ed Sheeran喔'
     elif '嗎' in msg:
         r = '嗯嗯'
-    elif '好' in msg:
-        r = '沒關係, 我的朋友'  
+ 
     elif '乾我' in msg:
         r = '是喔好吧'      
     elif '屁' in msg:
