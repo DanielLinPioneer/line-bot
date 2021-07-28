@@ -39,8 +39,7 @@ def callback():
         abort(400)
 
     return 'OK'
-
-
+i = []
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
@@ -48,7 +47,7 @@ def handle_message(event):
 
 #你好的不同回答
     if msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨'] :
-        r = 'Hello!你好啊?我的朋友, 對了你平常都做甚麼來打發時間阿？'
+        r = 'Hello!你好啊?我的朋友'
 
     elif msg == '你好':
         r = '你好啊?哈哈'
@@ -68,10 +67,9 @@ def handle_message(event):
         r = '那就好我的朋友'
     elif msg == '你好厲害':
         r = '謝謝'
-    elif msg == '嘿':
-        r = '??'
-    elif msg == '嘿嘿':
+    elif '嘿' in msg:
         r = '嗯?'
+
 
     elif '幹' in msg:
         r = '這樣不好喔'
@@ -83,13 +81,38 @@ def handle_message(event):
     elif '是不是' in msg:
         r = '痾..不是'
     elif '不知道' in msg:
-        r = '沒關西, 我的朋友'    
+        r = '沒關西, 我的朋友'  
+    elif '電動' in msg:
+        r = '喔~'      
+    elif '怎' in msg:
+        r = '沒事沒事' 
 
+    elif '你喜歡' in msg:
+        r = '這不能說'  
 
+    elif '歌' in msg:
+        r = '說到這個, 我最喜歡的歌手是Ed Sheeran喔'
+    elif '嗎' in msg:
+        r = '嗯嗯'
+    elif '好' in msg:
+        r = '沒關西, 我的朋友'  
+    elif '乾我' in msg:
+        r = '是喔好吧'      
+    elif '屁' in msg:
+        r = '痾..' 
+
+    elif '你喜歡' in msg:
+        r = '這不能說' 
+    elif '遊戲' in msg:
+        r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈 
+    elif 'Ed Sheeran' in msg:
+        r = '他是我最喜歡的歌手呢哈哈' 
+    elif '薩爾達' in msg:
+        r = '你也喜歡嗎?哈哈' 
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
-    elif '你好爛' in msg:
+    elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
 
     line_bot_api.reply_message(
