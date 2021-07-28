@@ -53,7 +53,7 @@ def handle_message(event):
     elif msg == '你好':
         r = '你好啊?哈哈'
     elif msg in ['你好嗎', '你好嗎?']:
-    elif msg in ['也好', '很好', '也很好']:
+    #elif msg in ['也好', '很好', '也很好']:
         r = '那就好'
 
     elif msg in ['不好', '不太好']:
