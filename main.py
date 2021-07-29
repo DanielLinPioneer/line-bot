@@ -50,6 +50,8 @@ def handle_message(event):
 
     if msg == '你好':
         r = '你好啊?哈哈'
+    elif '?' in msg:
+        r = '痾..'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
     elif msg in ['也好', '很好', '也很好']:
@@ -57,7 +59,7 @@ def handle_message(event):
 
     elif msg in ['不好', '不太好']:
         r = '怎麼了嗎?我的朋友'
-    elif msg == '你好嗎?':
+    elif '你好嗎' in msg:
         r = '我很好, 你?'
     elif '無' in msg:
         r = '是嗎?' 
@@ -102,6 +104,8 @@ def handle_message(event):
         r = '痾..' 
     elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉', '早安', '午安', '晚安'] :
         r = 'Hello!你好啊?我的朋友'
+    elif '的' in msg:
+        r = '痾..'
 
     elif '會說' in msg:
         r = '你再問問看'
