@@ -81,11 +81,12 @@ def handle_message(event):
     elif '是不是' in msg:
         r = '痾..不是'  
     elif '電動' in msg:
-        r = '喔~'      
+        r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈'      
     elif '怎' in msg:
         r = '沒事沒事' 
-
-    elif '喜歡' in msg:
+    elif '怎' in msg:
+        r = '沒事沒事' 
+    elif '在' in msg:
         r = '這不能說'  
     elif '不知道' in msg:
         r = '哈哈'
