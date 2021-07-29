@@ -148,6 +148,8 @@ def handle_message(event):
     elif '謝謝' in msg:
         r = '不客氣'
     elif '我喜歡你' in msg:
+        r = '我也是'
+    elif '愛' in msg:
         r = '我也是' 
     line_bot_api.reply_message(
         event.reply_token,
