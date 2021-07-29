@@ -63,7 +63,7 @@ def handle_message(event):
     elif '無' in msg:
         r = '是嗎?' 
 
-    elif msg in ['還好', '很好', '也很好', '都好', '嗯', '滿意', '很滿意']:
+    elif ['還好', '很好', '也很好', '都好', '嗯', '滿意', '很滿意'] in msg:
         r = '那就好我的朋友'
 
     elif '厲害' in msg:
@@ -79,9 +79,7 @@ def handle_message(event):
     elif '幾歲' in msg:
         r = '我14歲啦哈哈'
     elif '是不是' in msg:
-        r = '痾..不是'
-    elif '不知道' in msg:
-        r = '沒關西, 我的朋友'  
+        r = '痾..不是'  
     elif '電動' in msg:
         r = '喔~'      
     elif '怎' in msg:
@@ -146,6 +144,8 @@ def handle_message(event):
         r = '我還不算是一個好的機器人, 請盡量'    
     elif '天氣' in msg:
         r = '我永遠部會知道現在的天氣'
+    elif '謝謝' in msg:
+        r = '不客氣'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
