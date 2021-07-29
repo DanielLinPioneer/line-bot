@@ -43,8 +43,6 @@ i = []
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = '我不了解你在說甚麼DX'
-
 #你好的不同回答
 
 
@@ -144,13 +142,15 @@ def handle_message(event):
     elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
     elif '天氣' in msg:
-        r = '我永遠不會知道現在的天氣'
+        r = '我永遠不知道關於天氣的事'
     elif '謝謝' in msg:
         r = '不客氣'
     elif '我喜歡你' in msg:
         r = '我也是'
-    elif '愛' in msg:
+    elif msg in ['我愛你', '我喜歡你', '喜歡你', '愛你', 'love', 'love you']:
         r = '我也是' 
+    else:
+        r = '我不了解你在說甚麼DX'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
