@@ -62,10 +62,9 @@ def handle_message(event):
     elif '無' in msg:
         r = '是嗎?' 
 
-    elif msg in ['還好', '很好', '也很好', '都好']:
+    elif msg in ['還好', '很好', '也很好', '都好', '嗯', '滿意', '很滿意']:
         r = '那就好我的朋友'
-    elif msg in ['嗯', '滿意', '很滿意']:
-        r = '那就好我的朋友'
+
     elif '厲害' in msg:
         r = '謝謝'
     elif '嘿' in msg:
@@ -135,6 +134,8 @@ def handle_message(event):
         r = '我的設定是男生'
     elif '生日' in msg:
         r = '說到這個我生日是四月六號喔'
+    elif '會' in msg:
+        r = '不會'
     elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
 
