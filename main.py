@@ -96,7 +96,7 @@ def handle_message(event):
     elif '嗎' in msg:
         r = '嗯嗯'
     elif '為什麼' in msg:
-        r = '不知道' 
+        r = '不告訴你' 
     elif '乾我' in msg:
         r = '是喔好吧'      
     elif '屁' in msg:
@@ -144,7 +144,8 @@ def handle_message(event):
         r = '不會'
     elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
-
+    elif '天氣' in msg:
+        r = '我永遠部會知道現在的天氣'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
