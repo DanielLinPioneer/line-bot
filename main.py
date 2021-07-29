@@ -144,9 +144,11 @@ def handle_message(event):
     elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
     elif '天氣' in msg:
-        r = '我永遠部會知道現在的天氣'
+        r = '我永遠不會知道現在的天氣'
     elif '謝謝' in msg:
         r = '不客氣'
+    elif '我喜歡你' in msg:
+        r = '我也是' 
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
