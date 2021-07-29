@@ -71,7 +71,6 @@ def handle_message(event):
     elif '嘿' in msg:
         r = '嗯?'
 
-
     elif '幹' in msg:
         r = '這樣不好喔'
     elif '三小' in msg:
@@ -90,17 +89,19 @@ def handle_message(event):
 
     elif '喜歡' in msg:
         r = '這不能說'  
-
+    elif '不知道' in msg:
+        r = '哈哈'
     elif '歌' in msg:
         r = '說到這個, 我最喜歡的歌手是Ed Sheeran喔'
     elif '嗎' in msg:
         r = '嗯嗯'
- 
+    elif '為什麼' in msg:
+        r = '不知道' 
     elif '乾我' in msg:
         r = '是喔好吧'      
     elif '屁' in msg:
         r = '痾..' 
-    elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉'] :
+    elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉', '早安', '午安', '晚安'] :
         r = 'Hello!你好啊?我的朋友'
 
     elif '會說' in msg:
@@ -130,6 +131,10 @@ def handle_message(event):
 #回答你是誰
     elif '你是誰' in msg:
         r = '我是虛擬語聖DX'
+    elif '性別' in msg:
+        r = '我的設定是男生'
+    elif '生日' in msg:
+        r = '說到這個我生日是四月六號喔'
     elif '爛' in msg:
         r = '我還不算是一個好的機器人, 請盡量'    
 
