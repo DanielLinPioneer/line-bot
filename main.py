@@ -63,7 +63,7 @@ def handle_message(event):
     elif '無' in msg:
         r = '是嗎?' 
 
-    elif ['還好', '很好', '也很好', '都好', '嗯', '滿意', '很滿意'] in msg:
+    elif msg in ['還好', '很好', '也很好', '都好', '嗯', '滿意', '很滿意']:
         r = '那就好我的朋友'
 
     elif '厲害' in msg:
