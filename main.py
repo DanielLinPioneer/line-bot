@@ -49,7 +49,7 @@ def handle_message(event):
 
 
 
-    if '?' in msg:
+    if '？' in msg:
         r = '痾..'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
