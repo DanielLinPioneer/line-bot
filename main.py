@@ -48,9 +48,8 @@ def handle_message(event):
 #你好的不同回答
 
 
-    if msg == '你好':
-        r = '你好啊?哈哈'
-    elif '?' in msg:
+
+    if '?' in msg:
         r = '痾..'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
@@ -102,11 +101,12 @@ def handle_message(event):
         r = '是喔好吧'      
     elif '屁' in msg:
         r = '痾..' 
-    elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉', '早安', '午安', '晚安'] :
+    elif msg in ['hi', 'Hi', 'hello', 'Hello', 'hi?', 'Hi?', 'hello?', 'Hello?', '嗨嗨', '嗨', '哈摟', '哈囉', '早安', '午安', '晚安', '你好'] :
         r = 'Hello!你好啊?我的朋友'
     elif '的' in msg:
         r = '痾..'
-
+    elif '吃' in msg:
+        r = '我沒有特別喜歡的'
     elif '會說' in msg:
         r = '你再問問看'
     elif '相信' in msg:
@@ -138,6 +138,8 @@ def handle_message(event):
         r = '我的設定是男生'
     elif '生日' in msg:
         r = '說到這個我生日是四月六號喔'
+    elif '星座' in msg:
+        r = '我不知道'
     elif '會' in msg:
         r = '不會'
     elif '爛' in msg:
