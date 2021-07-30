@@ -47,7 +47,7 @@ def handle_message(event):
 
 
 
-    if ['？', '？？'] == msg:
+    if ['？', '？？', '?', '??'] == msg:
         r = '痾..'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
@@ -146,7 +146,7 @@ def handle_message(event):
     elif '我喜歡你' in msg:
         r = '我也是'
     elif msg in ['我愛你', '我喜歡你', '喜歡你', '愛你', 'love', 'love you']:
-        r = '我也是' 
+        r = '我也是'
     else:
         r = '我不了解你在說甚麼DX'
     line_bot_api.reply_message(
