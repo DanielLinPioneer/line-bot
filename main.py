@@ -47,7 +47,7 @@ def handle_message(event):
 
 
 
-    if '？' == msg:
+    if ['？', '？？'] == msg:
         r = '痾..'
     elif msg in ['你好嗎', '你好嗎?']:
         r = '你好啊?哈哈'
@@ -80,8 +80,6 @@ def handle_message(event):
         r = '痾..不是'  
     elif '電動' in msg:
         r = '話說我最喜歡的遊戲是薩爾達傳說曠野之息哈'      
-    elif '怎' in msg:
-        r = '沒事沒事' 
     elif '怎' in msg:
         r = '沒事沒事' 
     elif '在' in msg:
