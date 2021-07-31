@@ -114,8 +114,10 @@ def handle_message(event):
         r = '你也喜歡嗎?哈哈' 
     elif '喔' in msg:
         r = '嗯嗯'
-    elif '喜歡做的事' in msg:
+    elif '喜歡做' in msg:
         r = '我喜歡寫程式, 畫3D, 彈吉他和唱歌'  
+    elif '什麼' in msg:
+        r = '不告訴你'
     elif '吉他' in msg:
         r = '我喜歡彈吉他哈哈' 
     elif '我是誰' in msg:
